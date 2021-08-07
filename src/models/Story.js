@@ -29,8 +29,7 @@ const Story = sequelize.define('Story', {
 });
 
 Story.associate = function(models) {
-    Story.hasMany(models.User);   
-    Story.belongsTo(models.User)   
+    Story.belongsTo(models.User)        
 }
 
 
